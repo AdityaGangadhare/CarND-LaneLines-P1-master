@@ -53,8 +53,9 @@ The output is as shown here.
 
 ### 2. Potential shortcomings with the current pipeline
 
-As the parameters in various techniques used to find lanes are hardcoded above pipeline may not provide consistent out put in differet road and lightning conditions. Also while finding region of interest teh boundry coordinates are set manually this may cause issues if image is of different resolution and changes in camera position. 
+As the parameters in various techniques used to find lanes are hardcoded above pipeline may not provide consistent out put in differet road and lightning conditions. Also while finding region of interest the boundry coordinates are set manually this may cause issues if image is of different resolution and changes in camera position. 
 
+---
 
 ### 3. Possible improvements to the pipeline
 
