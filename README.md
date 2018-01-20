@@ -35,19 +35,19 @@ The pipeline for finding the lane lines consists of following steps.
 
 ![gaussian](./test_images_output/solidWhiteCurve_gaussia.jpg)
 
-* Created a region of interest and applied it over the image shown above. In the output I got an image with only the necessary information i.e. lane lines.
+* Next we need to find the region between the lane lines(region of interest).
 
-![masked](./md%20resources/solidWhiteRight_masked.jpg)
+![masked](./test_images_output/solidWhiteCurve_roi.jpg)
 
-* In order to find out the all the x,y coordinates that belong to the lane lines I took a hough transform of this image. The hough transform provided the coordinates of start & end point of all the lines that are detected in the image. 
-Lines corresponding to left and right lanes are identified and drawn (more info on drawing lines below). 
+* All the x,y coordinates that belong to the lane lines need to be found. For this Hough transform is applied on the image from the previous step. The hough transform provided the coordinates of start & end point of all the lines that are detected in the image. 
+Lines corresponding to left and right lanes are identified and drawn. 
 The output is as shown here.
 
-![hough](./md%20resources/solidWhiteRight_hough.jpg)
+![hough](./test_images_output/solidWhiteCurve_lines.jpg)
 
-* This image is overlayed on top of original image to highlight the lanes which are detected. :smiley: The result is :
+* Combining the output of previous step with original image we get an image with only lane lines highlighted.
 
-![final](./md%20resources/solidWhiteRight.jpg)
+![final](./test_images_output/solidWhiteCurve.jpg)
 
 ---
 
